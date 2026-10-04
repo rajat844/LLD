@@ -1,0 +1,123 @@
+<mxfile host="65bd71144e">
+    <diagram id="ObgaItv4PD0bnX-CMPQ1" name="Page-1">
+        <mxGraphModel dx="648" dy="1773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Ticket Service" vertex="1">
+                    <mxGeometry height="200" width="200" x="80" y="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="- Ticket Repository&lt;div&gt;- Agent Service&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ create Ticket&lt;/div&gt;&lt;div&gt;+ getTicket&lt;/div&gt;&lt;div&gt;+ update Ticket&lt;/div&gt;&lt;div&gt;+ resolveTicket&lt;/div&gt;&lt;div&gt;+ changeAgent&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="170" width="200" x="80" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-5" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Ticket Repository" vertex="1">
+                    <mxGeometry height="200" width="200" x="380" y="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-11" edge="1" parent="1" source="Uel30QjwQRnJa0LbVriL-6" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.987;exitY=0.476;exitDx=0;exitDy=0;exitPerimeter=0;" target="Uel30QjwQRnJa0LbVriL-10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="- HashMap&amp;lt;UUID,Ticket&amp;gt; tickets&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ save&lt;/div&gt;&lt;div&gt;+ update&lt;/div&gt;&lt;div&gt;+ findById&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="180" width="200" x="380" y="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-7" edge="1" parent="1" source="Uel30QjwQRnJa0LbVriL-2" style="edgeStyle=none;html=1;entryX=-0.01;entryY=0.539;entryDx=0;entryDy=0;entryPerimeter=0;" target="Uel30QjwQRnJa0LbVriL-6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-15" edge="1" parent="1" source="Uel30QjwQRnJa0LbVriL-9" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="Uel30QjwQRnJa0LbVriL-16">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="870" y="380" as="sourcePoint"/>
+                        <mxPoint x="770" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-9" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Ticket" vertex="1">
+                    <mxGeometry height="210" width="220" x="670" y="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-10" parent="Uel30QjwQRnJa0LbVriL-9" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="- id&lt;div&gt;- type&lt;/div&gt;&lt;div&gt;- title&lt;/div&gt;&lt;div&gt;- decription&lt;/div&gt;&lt;div&gt;- creationDate&lt;/div&gt;&lt;div&gt;- deadline&lt;/div&gt;&lt;div&gt;- assignedTo&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ startProgress&lt;/div&gt;&lt;div&gt;+ resolve&lt;/div&gt;&lt;div&gt;+ updateDeadline&lt;br&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="190" width="220" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-14" edge="1" parent="1" source="Uel30QjwQRnJa0LbVriL-10" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Uel30QjwQRnJa0LbVriL-12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-12" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="TicketType" vertex="1">
+                    <mxGeometry height="200" width="200" x="680" y="550" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-13" parent="Uel30QjwQRnJa0LbVriL-12" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="+ Software&lt;div&gt;+QualityAnalysis&lt;/div&gt;&lt;div&gt;+ Product&lt;/div&gt;&lt;div&gt;+ HumanRelations&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="180" width="200" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-16" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="TicketStatus" vertex="1">
+                    <mxGeometry height="200" width="200" x="980" y="265" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="+ Open&lt;div&gt;+ Resolved&lt;/div&gt;&lt;div&gt;+ InProgress&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="180" width="200" x="970" y="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-18" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="AgentService" vertex="1">
+                    <mxGeometry height="200" width="200" x="80" y="-30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-20" edge="1" parent="1" style="edgeStyle=none;html=1;entryX=0.385;entryY=0.994;entryDx=0;entryDy=0;exitX=0.38;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="178" y="270" as="sourcePoint"/>
+                        <mxPoint x="179" y="168.92000000000007" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-21" edge="1" parent="1" source="Uel30QjwQRnJa0LbVriL-19" style="edgeStyle=none;html=1;exitX=1.015;exitY=0.467;exitDx=0;exitDy=0;exitPerimeter=0;" target="Uel30QjwQRnJa0LbVriL-22">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="390" y="80" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;color: light-dark(rgb(192, 192, 192), rgb(255, 255, 255));&quot;&gt;- AgentRepository&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(192, 192, 192), rgb(255, 255, 255));&quot;&gt;- AssignAgentStrategy&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(192, 192, 192), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(192, 192, 192), rgb(255, 255, 255));&quot;&gt;+ addAgent&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(192, 192, 192), rgb(255, 255, 255));&quot;&gt;+ getAgent&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(192, 192, 192), rgb(255, 255, 255));&quot;&gt;+ AssignTciket&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(192, 192, 192), rgb(255, 255, 255));&quot;&gt;+ Change Agent&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(192, 192, 192), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="180" width="200" x="80" y="-10" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-34" edge="1" parent="1" source="Uel30QjwQRnJa0LbVriL-18" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Uel30QjwQRnJa0LbVriL-36">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="500" y="-130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-22" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Agent Repository" vertex="1">
+                    <mxGeometry height="210" width="200" x="400" y="-30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-24" edge="1" parent="1" source="Uel30QjwQRnJa0LbVriL-23" style="edgeStyle=none;html=1;exitX=1.005;exitY=0.394;exitDx=0;exitDy=0;exitPerimeter=0;" target="Uel30QjwQRnJa0LbVriL-29">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="600" y="74" as="sourcePoint"/>
+                        <mxPoint x="710" y="74" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="- List&amp;lt;Agent&amp;gt; agent&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;-&amp;nbsp;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ addAgent&lt;/div&gt;&lt;div&gt;+ findById&lt;/div&gt;&lt;div&gt;+ getAllAgents&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="180" width="200" x="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-29" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Agent" vertex="1">
+                    <mxGeometry height="205" width="200" x="730" y="-32" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-30" parent="Uel30QjwQRnJa0LbVriL-29" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="- id&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;- name&lt;br&gt;&lt;/font&gt;&lt;div&gt;- set&amp;lt;Expertise&amp;gt; expertises&lt;/div&gt;&lt;div&gt;- list&amp;lt;Ticket&amp;gt; AssignedTickets&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ assign&lt;/div&gt;&lt;/div&gt;&lt;div&gt;+ remove&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="180" width="200" y="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-32" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Expertise" vertex="1">
+                    <mxGeometry height="200" width="200" x="1040" y="-29" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-31" edge="1" parent="1" source="Uel30QjwQRnJa0LbVriL-30" style="edgeStyle=none;html=1;exitX=1.005;exitY=0.428;exitDx=0;exitDy=0;exitPerimeter=0;" target="Uel30QjwQRnJa0LbVriL-32">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1020" y="90" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="+ Software&lt;div&gt;+ Quality Analysis&lt;/div&gt;&lt;div&gt;+ Product&lt;/div&gt;&lt;div&gt;+ HumanResource&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="180" width="200" x="1040" y="-10" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-35" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="AssignAgentStrategy" vertex="1">
+                    <mxGeometry height="200" width="200" x="80" y="-350" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-36" parent="Uel30QjwQRnJa0LbVriL-35" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="+ getAgent" vertex="1">
+                    <mxGeometry height="170" width="200" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-37" edge="1" parent="1" source="Uel30QjwQRnJa0LbVriL-36" style="edgeStyle=none;html=1;exitX=1.01;exitY=0.418;exitDx=0;exitDy=0;exitPerimeter=0;" target="Uel30QjwQRnJa0LbVriL-38">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="730" y="-215" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-38" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="ExpertizeBasedAssignment" vertex="1">
+                    <mxGeometry height="200" width="200" x="390" y="-350" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uel30QjwQRnJa0LbVriL-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div&gt;+ getAgent&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="180" width="200" x="400" y="-325" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
