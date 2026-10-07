@@ -1,0 +1,128 @@
+<mxfile host="65bd71144e">
+    <diagram id="1cME2_Dmk36WTKg3CXe1" name="Page-1">
+        <mxGraphModel dx="1391" dy="1407" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#ffffff, #121212)" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="FMXYNumedcdXywVSs4cO-31" edge="1" parent="1" source="FMXYNumedcdXywVSs4cO-49" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="FMXYNumedcdXywVSs4cO-32">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="430.47058823529414" y="660" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-1" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="LoggerManager&lt;div&gt;(Singleton)&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="215" width="230" x="320" y="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-2" parent="FMXYNumedcdXywVSs4cO-1" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;- firstHandler&amp;nbsp;&lt;/div&gt;&lt;div&gt;- instance&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getInstance&lt;/div&gt;&lt;div&gt;+ fatal&lt;/div&gt;&lt;div&gt;+ error&lt;/div&gt;&lt;div&gt;+ warn&lt;/div&gt;&lt;div&gt;+ debug&lt;/div&gt;&lt;div&gt;+ Info&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="165" width="230" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-21" edge="1" parent="1" source="FMXYNumedcdXywVSs4cO-10" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="FMXYNumedcdXywVSs4cO-43">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="840" y="1000" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="JeRcajHWamXu4l_WaIje-1" edge="1" parent="1" source="FMXYNumedcdXywVSs4cO-10" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="FMXYNumedcdXywVSs4cO-1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="540" y="519.9999999999998" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-10" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Level Message" vertex="1">
+                    <mxGeometry height="151" width="190" x="630" y="422" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-11" parent="FMXYNumedcdXywVSs4cO-10" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;- type&lt;/div&gt;&lt;div&gt;- message&lt;/div&gt;&lt;div&gt;- threadName&lt;/div&gt;&lt;div&gt;- timestamp&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="101" width="190" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-24" edge="1" parent="1" source="FMXYNumedcdXywVSs4cO-22" style="edgeStyle=none;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="FMXYNumedcdXywVSs4cO-25">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-140" y="220" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-27" edge="1" parent="1" source="FMXYNumedcdXywVSs4cO-22" style="edgeStyle=none;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="FMXYNumedcdXywVSs4cO-28">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-80" y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-52" edge="1" parent="1" source="FMXYNumedcdXywVSs4cO-22" style="edgeStyle=none;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="FMXYNumedcdXywVSs4cO-39">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-22" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Format Strategy" vertex="1">
+                    <mxGeometry height="120" width="160" x="390" y="1360" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-23" parent="FMXYNumedcdXywVSs4cO-22" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;+ getLogLine&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="70" width="160" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-25" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Text Formatter" vertex="1">
+                    <mxGeometry height="120" width="160" x="550" y="1580" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-26" parent="FMXYNumedcdXywVSs4cO-25" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+ format : String" vertex="1">
+                    <mxGeometry height="70" width="160" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-28" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="JSON Formatter" vertex="1">
+                    <mxGeometry height="120" width="160" x="250" y="1570" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-29" parent="FMXYNumedcdXywVSs4cO-28" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="format : JSON" vertex="1">
+                    <mxGeometry height="70" width="160" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-30" edge="1" parent="1" source="FMXYNumedcdXywVSs4cO-22" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="FMXYNumedcdXywVSs4cO-35">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="220" y="810" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-37" edge="1" parent="1" source="FMXYNumedcdXywVSs4cO-32" style="edgeStyle=none;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="FMXYNumedcdXywVSs4cO-38">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="580" y="730" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-32" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="OutputStrategy" vertex="1">
+                    <mxGeometry height="120" width="160" x="350.0005882352941" y="960" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-33" parent="FMXYNumedcdXywVSs4cO-32" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+ setFormatter&lt;div&gt;+ getFormatter&lt;/div&gt;&lt;div&gt;+ append&lt;/div&gt;&lt;div&gt;+ close&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="70" width="160" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-34" edge="1" parent="1" source="FMXYNumedcdXywVSs4cO-33" style="edgeStyle=none;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="FMXYNumedcdXywVSs4cO-35">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="270" y="760" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-35" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Console Output" vertex="1">
+                    <mxGeometry height="160" width="210" x="140" y="1130" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-36" parent="FMXYNumedcdXywVSs4cO-35" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;- formatter&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ setFormatter&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20);&quot;&gt;+ getFormatter&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20);&quot;&gt;+ append&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20);&quot;&gt;+ close&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="110" width="210" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-38" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Text Output" vertex="1">
+                    <mxGeometry height="160" width="230" x="550" y="1130" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-39" parent="FMXYNumedcdXywVSs4cO-38" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20);&quot;&gt;&lt;span style=&quot;scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20); color: rgb(0, 0, 0);&quot;&gt;- formatter&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20);&quot;&gt;&lt;span style=&quot;scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20); color: rgb(0, 0, 0);&quot;&gt;&lt;br style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20); color: rgb(0, 0, 0);&quot;&gt;+ setFormatter&lt;/span&gt;&lt;div style=&quot;scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20); color: rgb(63, 63, 63);&quot;&gt;+ getFormatter&lt;/div&gt;&lt;div style=&quot;scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20); color: rgb(63, 63, 63);&quot;&gt;+ append&lt;/div&gt;&lt;div style=&quot;scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20); color: rgb(63, 63, 63);&quot;&gt;+ close&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="110" width="230" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-43" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="LogType" vertex="1">
+                    <mxGeometry height="140" width="200" x="970" y="427.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-44" parent="FMXYNumedcdXywVSs4cO-43" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+ FATAL&lt;br&gt;+ ERROR&lt;br&gt;+ WARN&lt;br&gt;+ DEBUG&lt;br&gt;+ INFO" vertex="1">
+                    <mxGeometry height="90" width="200" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-51" edge="1" parent="1" source="FMXYNumedcdXywVSs4cO-1" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" target="FMXYNumedcdXywVSs4cO-49" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="430" y="605" as="sourcePoint"/>
+                        <mxPoint x="437" y="760" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="JeRcajHWamXu4l_WaIje-6" edge="1" parent="1" source="FMXYNumedcdXywVSs4cO-49" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="JeRcajHWamXu4l_WaIje-4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-49" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Logger Handler" vertex="1">
+                    <mxGeometry height="180" width="220" x="320" y="708" as="geometry"/>
+                </mxCell>
+                <mxCell id="FMXYNumedcdXywVSs4cO-50" parent="FMXYNumedcdXywVSs4cO-49" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;- handledLevel&lt;/div&gt;&lt;div&gt;- next&lt;/div&gt;&lt;div&gt;- output&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ handle&lt;/div&gt;&lt;div&gt;+ setNext&lt;/div&gt;&lt;div&gt;+ addOutput&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="130" width="220" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="JeRcajHWamXu4l_WaIje-4" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Level Chain" vertex="1">
+                    <mxGeometry height="180" width="220" x="690" y="708" as="geometry"/>
+                </mxCell>
+                <mxCell id="JeRcajHWamXu4l_WaIje-5" parent="JeRcajHWamXu4l_WaIje-4" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&amp;nbsp;Fatal Handler&lt;div&gt;&amp;nbsp;Error Handler&lt;/div&gt;&lt;div&gt;&amp;nbsp;Warn Handler&lt;/div&gt;&lt;div&gt;&amp;nbsp;Debug Handler&lt;/div&gt;&lt;div&gt;&amp;nbsp;Info Handler&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="130" width="220" y="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
