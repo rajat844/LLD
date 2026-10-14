@@ -48,25 +48,4 @@ class LogManager {
     private void log(LogType type, String msg) {
         firstHandler.handle(new LogMessage(type, msg, LocalDateTime.now()));
     }
-
-    void fatal(String msg) {
-        log(LogType.FATAL, msg);
-    }
-
-    void error(String msg) {
-        log(LogType.ERROR, msg);
-    }
-
-    void warn(String msg) {
-        log(LogType.WARN, msg);
-    }
-
-    void debug(String msg) {
-        log(LogType.DEBUG, msg);
-    }
-
-    void info(String msg) {
-        log(LogType.INFO, msg);
-    }
-
 }
