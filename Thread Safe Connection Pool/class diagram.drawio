@@ -1,0 +1,95 @@
+<mxfile host="65bd71144e">
+    <diagram id="6V2rghuiIOXFzdVeaIGZ" name="Page-1">
+        <mxGraphModel dx="818" dy="1060" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-5" edge="1" parent="1" source="PwNgGpiGOTQTA4bmLX9e-1" style="edgeStyle=none;html=1;" target="PwNgGpiGOTQTA4bmLX9e-3" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-1" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Connection Pool&lt;div&gt;(Singleton)&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="210" width="160" x="400" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-2" parent="PwNgGpiGOTQTA4bmLX9e-1" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- idleQueue&lt;div&gt;- maxPoolSize&lt;/div&gt;&lt;div&gt;- currentSize&lt;/div&gt;&lt;div&gt;- factory&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ acquire()&lt;/div&gt;&lt;div&gt;+ release()&lt;/div&gt;&lt;div&gt;+ shutdown()&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="160" width="160" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-3" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Connection&lt;div&gt;(Interface)&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="160" width="160" x="400" y="580" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-4" parent="PwNgGpiGOTQTA4bmLX9e-3" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;+ execute()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+ close()&lt;/div&gt;&lt;div&gt;+ isValid()&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="110" width="160" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-8" edge="1" parent="1" source="PwNgGpiGOTQTA4bmLX9e-6" style="edgeStyle=none;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="PwNgGpiGOTQTA4bmLX9e-4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-6" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Basic Connection" vertex="1">
+                    <mxGeometry height="150" width="180" x="190" y="810" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-7" parent="PwNgGpiGOTQTA4bmLX9e-6" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- socketUrl&lt;div&gt;- isOpen&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+execute()&lt;/div&gt;&lt;div&gt;+ close()&lt;/div&gt;&lt;div&gt;+ isValid()&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="100" width="180" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-11" edge="1" parent="1" source="PwNgGpiGOTQTA4bmLX9e-9" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="PwNgGpiGOTQTA4bmLX9e-4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-20" edge="1" parent="1" source="PwNgGpiGOTQTA4bmLX9e-9" style="edgeStyle=none;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="PwNgGpiGOTQTA4bmLX9e-18" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-9" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Connection Decorator&lt;div&gt;(Abstract Class)&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="120" width="160" x="400" y="810" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-14" edge="1" parent="1" source="PwNgGpiGOTQTA4bmLX9e-12" style="edgeStyle=none;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="930" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-12" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Pooled Connection" vertex="1">
+                    <mxGeometry height="130" width="170" x="180" y="1010" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-13" parent="PwNgGpiGOTQTA4bmLX9e-12" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- pool&amp;nbsp;&lt;div&gt;- isReleased&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ execute()&lt;/div&gt;&lt;div&gt;+ close()&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="80" width="170" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-32" edge="1" parent="1" source="PwNgGpiGOTQTA4bmLX9e-15" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="PwNgGpiGOTQTA4bmLX9e-30">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-15" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Connection Factory" vertex="1">
+                    <mxGeometry height="120" width="160" x="150" y="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-16" parent="PwNgGpiGOTQTA4bmLX9e-15" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- dbUrl&lt;div&gt;- metricsCollector&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ createConnection&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="70" width="160" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-17" edge="1" parent="1" style="edgeStyle=none;html=1;entryX=-0.006;entryY=0.378;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="PwNgGpiGOTQTA4bmLX9e-2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="309.99999999999994" y="411.3270588235294" as="sourcePoint"/>
+                        <mxPoint x="400" y="408.68" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-18" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Metrices Collection" vertex="1">
+                    <mxGeometry height="120" width="160" x="400" y="1010" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-19" parent="PwNgGpiGOTQTA4bmLX9e-18" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- metricsCollector&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ execute()&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="70" width="160" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-23" edge="1" parent="1" source="PwNgGpiGOTQTA4bmLX9e-21" style="edgeStyle=none;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="560" y="930" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-21" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Health Check Connection" vertex="1">
+                    <mxGeometry height="120" width="160" x="630" y="1010" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-22" parent="PwNgGpiGOTQTA4bmLX9e-21" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- createdAt&lt;div&gt;- maxLifeTime&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ isValid()&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="70" width="160" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="- wrappedConnection&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ execute()&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ close()&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ isValid()&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="70" width="160" x="400" y="860" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-30" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Metrics Collector" vertex="1">
+                    <mxGeometry height="130" width="170" x="145" y="550" as="geometry"/>
+                </mxCell>
+                <mxCell id="PwNgGpiGOTQTA4bmLX9e-31" parent="PwNgGpiGOTQTA4bmLX9e-30" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- totalQueries&lt;div&gt;- totalLatency&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ recordQuery&lt;/div&gt;&lt;div&gt;+ dumpMetrics&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="80" width="170" y="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
