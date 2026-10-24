@@ -1,0 +1,97 @@
+<mxfile host="65bd71144e">
+    <diagram id="PQp6TR67uF9c8ruvzkTu" name="Page-1">
+        <mxGraphModel dx="1642" dy="1076" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-5" edge="1" parent="1" source="ZN3ULXDy0jyixN8BRbau-1" style="edgeStyle=none;html=1;" target="ZN3ULXDy0jyixN8BRbau-3" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-31" edge="1" parent="1" source="ZN3ULXDy0jyixN8BRbau-1" style="edgeStyle=none;html=1;" target="ZN3ULXDy0jyixN8BRbau-29" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-1" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Cache Manager" vertex="1">
+                    <mxGeometry height="110" width="260" x="310" y="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-2" parent="ZN3ULXDy0jyixN8BRbau-1" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- builder : CacheBuilder&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ createCache(evictionPolicy) : Cache&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="260" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-8" edge="1" parent="1" source="ZN3ULXDy0jyixN8BRbau-3" style="edgeStyle=none;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="ZN3ULXDy0jyixN8BRbau-6" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-14" edge="1" parent="1" source="ZN3ULXDy0jyixN8BRbau-3" style="edgeStyle=none;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="ZN3ULXDy0jyixN8BRbau-12" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-3" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Cache&lt;br&gt;(Interface)" vertex="1">
+                    <mxGeometry height="110" width="260" x="310" y="530" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-4" parent="ZN3ULXDy0jyixN8BRbau-3" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+ put(key, value, ttl) : void&lt;div&gt;+ get(key) : String&lt;/div&gt;&lt;div&gt;+ remove(key) : Boolean&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="260" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-11" edge="1" parent="1" source="ZN3ULXDy0jyixN8BRbau-6" style="edgeStyle=none;html=1;" target="ZN3ULXDy0jyixN8BRbau-9" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-6" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Lru Cache&lt;br&gt;(implements Cache)" vertex="1">
+                    <mxGeometry height="190" width="260" x="-110" y="730" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-7" parent="ZN3ULXDy0jyixN8BRbau-6" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- CacheMap : HashMap&amp;lt;String, CacheEntry&amp;gt;&amp;nbsp;&lt;div&gt;- Head : CacheEntry&lt;/div&gt;&lt;div&gt;- Tail : CacheEntry&lt;/div&gt;&lt;div&gt;- capacity : int&lt;/div&gt;&lt;div&gt;- lock : ReentrantLock&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ put(key, value, ttl) : void&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20);&quot;&gt;+ get(key) : String&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20);&quot;&gt;+ remove(key) : Boolean&lt;/div&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="140" width="260" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-9" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Cache Entry" vertex="1">
+                    <mxGeometry height="130" width="260" x="-110" y="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-10" parent="ZN3ULXDy0jyixN8BRbau-9" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- key : String&lt;div&gt;- value : String&lt;/div&gt;&lt;div&gt;- timestamp : long&lt;/div&gt;&lt;div&gt;- prev: CacheEntry&lt;/div&gt;&lt;div&gt;- next: CacheEntry&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="80" width="260" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-17" edge="1" parent="1" source="ZN3ULXDy0jyixN8BRbau-12" style="edgeStyle=none;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="ZN3ULXDy0jyixN8BRbau-15" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-20" edge="1" parent="1" source="ZN3ULXDy0jyixN8BRbau-12" style="edgeStyle=none;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="ZN3ULXDy0jyixN8BRbau-18" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-12" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Cache Decorator&lt;br&gt;(Abstract Class implements Cache)" vertex="1">
+                    <mxGeometry height="180" width="260" x="310" y="710" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-13" parent="ZN3ULXDy0jyixN8BRbau-12" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- wrappedCache : Cache&lt;br&gt;&lt;br&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ put(key, value, ttl) : void&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20);&quot;&gt;+ get(key) : String&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20);&quot;&gt;+ remove(key) : Boolean&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="130" width="260" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-23" edge="1" parent="1" source="ZN3ULXDy0jyixN8BRbau-15" style="edgeStyle=none;html=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;" target="ZN3ULXDy0jyixN8BRbau-21" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-15" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Logger Decorator&lt;div&gt;(extends Cache Decorator)&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="140" width="230" x="50" y="990" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-16" parent="ZN3ULXDy0jyixN8BRbau-15" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- collector : LogCollector&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ put(key, value, ttl) : void&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20);&quot;&gt;+ get(key) : String&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20);&quot;&gt;+ remove(key) : Boolean&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="90" width="230" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-18" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Metrics Decorator&lt;br&gt;(extends Cache Decorator)" vertex="1">
+                    <mxGeometry height="140" width="260" x="530" y="1000" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-19" parent="ZN3ULXDy0jyixN8BRbau-18" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- collector : MetricsCollector&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ put(key, value, ttl) : void&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20);&quot;&gt;+ get(key) : String&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(168, 169, 170, 0.52) rgb(18, 19, 20);&quot;&gt;+ remove(key) : Boolean&lt;/div&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="90" width="260" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-21" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Log Collector" vertex="1">
+                    <mxGeometry height="120" width="230" x="50" y="1210" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-22" parent="ZN3ULXDy0jyixN8BRbau-21" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- storage : ArrayList&amp;lt;String&amp;gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ addLogs(String) : void&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;+ dumpLogs(query): void&lt;/span&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="70" width="230" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-28" edge="1" parent="1" source="ZN3ULXDy0jyixN8BRbau-25" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="ZN3ULXDy0jyixN8BRbau-19">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-25" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Metrics Collector" vertex="1">
+                    <mxGeometry height="150" width="230" x="545" y="1210" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-26" parent="ZN3ULXDy0jyixN8BRbau-25" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- hits : AtomicLong&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;- misses : AtomicLong&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;+ recordHits(): void&lt;/div&gt;&lt;div&gt;+ recordMiss() : void&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;+ dumpMetrics(query) : void&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="100" width="230" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-29" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Cache Builder" vertex="1">
+                    <mxGeometry height="130" width="260" x="-110" y="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZN3ULXDy0jyixN8BRbau-30" parent="ZN3ULXDy0jyixN8BRbau-29" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- logCollector : LogCollector&lt;div&gt;- metricsCollector : MetricsCollector&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ build()&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="80" width="260" y="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
