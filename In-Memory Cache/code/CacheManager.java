@@ -10,8 +10,10 @@ public class CacheManager {
     private CacheBuilder builder;
 
     public CacheManager() {
-        this.builder = new CacheBuilder().withBaseCache(new LruCache(100)).withLogCollector(new LogCollector())
-                .withMetricsCollector(new MetricsCollector());
+        this.builder = new CacheBuilder()
+        .withBaseCache(new LruCache(100))
+        .withLogCollector(new LogCollector())
+        .withMetricsCollector(new MetricsCollector());
     }
 
     public Cache createCache() {

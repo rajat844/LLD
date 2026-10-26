@@ -13,6 +13,7 @@ public class MetricsConnection extends ConnectionDecorator {
 
     @Override
     public void execute(String query) {
+        super.execute(query);
         // Measure latency
     }
 
