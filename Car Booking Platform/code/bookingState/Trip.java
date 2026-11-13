@@ -27,6 +27,14 @@ public class Trip {
         this.tripStatus = TripStatus.REQUESTED;
     }
 
+    public Location getPickupLocation() {
+        return this.pickup;
+    }
+
+    public Driver getDriver() {
+        return driver;
+    }
+
     public void setState(TripState state) {
         this.currentState = state;
     }

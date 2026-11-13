@@ -21,4 +21,8 @@ public class Driver {
         this.status = status;
     }
 
+    public Vehicle getVehicle() {
+        return vehicle;
+    }
+
 }

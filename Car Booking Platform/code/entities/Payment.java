@@ -7,10 +7,10 @@ public class Payment {
     private UUID transactionId;
     private PaymentStatus paymentStatus;
 
-    public Payment(double amount, UUID transactionId, PaymentStatus paymentStatus) {
+    public Payment(double amount) {
         this.amount = amount;
-        this.transactionId = transactionId;
-        this.paymentStatus = paymentStatus;
+        this.transactionId = UUID.randomUUID();
+        this.paymentStatus = PaymentStatus.PENDING;
     }
 
     public double getAmount() {
@@ -25,4 +25,3 @@ public class Payment {
         this.paymentStatus = paymentStatus;
     }
 }
-
