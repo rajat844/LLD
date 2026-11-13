@@ -29,5 +29,5 @@
 12. Driver Matching Strategy
 13. Cancellation Strategy
 14. Payment Strategy
-15. Booking State
+15. Trip State
 16. Booking Manager
