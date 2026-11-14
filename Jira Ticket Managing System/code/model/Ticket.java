@@ -1,4 +1,4 @@
-package Code.Model;
+package code.model;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -10,7 +10,7 @@ public class Ticket {
     private String title;
     private String description;
 
-    private TicketStatus status;
+    private TaskStatus status;
     private LocalDateTime creationDate;
     private LocalDateTime deadline;
 
@@ -23,9 +23,9 @@ public class Ticket {
         this.type = type;
 
         this.creationDate = LocalDateTime.now();
-        this.status = TicketStatus.OPEN;
+        this.status = TaskStatus.OPEN;
 
-        System.out.println("Ticket" + title + " description" + description + "created at" + creationDate
+        System.out.println("Ticket '" + title + "' description: '" + description + "' created at " + creationDate
                 + " and will be assigned to agent very soon.");
     }
 
@@ -37,11 +37,19 @@ public class Ticket {
         return type;
     }
 
-    public TicketStatus getStatus() {
+    public TaskStatus getStatus() {
         return status;
     }
 
+    public void setStatus(TaskStatus status) {
+        this.status = status;
+    }
+
     public String getTitle() {
+        return title;
+    }
+
+    public String getName() {
         return title;
     }
 
@@ -74,21 +82,26 @@ public class Ticket {
     }
 
     public void startProgress() {
-        if (status != TicketStatus.OPEN) {
+        if (status != TaskStatus.OPEN && status != TaskStatus.IN_PROGRESS) {
             throw new IllegalStateException(
-                    "Only an OPEN ticket can be moved to IN_PROGRESS");
+                    "Only an OPEN or IN_PROGRESS ticket can be started. Current status: " + status);
         }
 
-        status = TicketStatus.IN_PROGRESS;
+        status = TaskStatus.IN_PROGRESS;
     }
 
-    public void resolve() {
-        if (status != TicketStatus.IN_PROGRESS) {
-            throw new IllegalStateException(
-                    "Only an IN_PROGRESS ticket can be resolved");
+    public boolean resolve() {
+        if (status == TaskStatus.RESOLVED) {
+            return true;
         }
 
-        status = TicketStatus.RESOLVED;
+        if (status != TaskStatus.IN_PROGRESS && status != TaskStatus.OPEN) {
+            throw new IllegalStateException(
+                    "Only an OPEN or IN_PROGRESS ticket can be resolved. Current status: " + status);
+        }
+
+        status = TaskStatus.RESOLVED;
+        return true;
     }
 
     public void updateDeadline(LocalDateTime deadline) {

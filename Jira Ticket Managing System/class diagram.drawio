@@ -1,58 +1,24 @@
 <mxfile host="65bd71144e">
     <diagram id="ObgaItv4PD0bnX-CMPQ1" name="Page-1">
-        <mxGraphModel dx="1479" dy="2255" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#ffffff, #121212)" math="0" shadow="0">
+        <mxGraphModel dx="1297" dy="1630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#ffffff, #121212)" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="Uel30QjwQRnJa0LbVriL-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Ticket Service" vertex="1">
                     <mxGeometry height="200" width="200" x="80" y="270" as="geometry"/>
                 </mxCell>
-                <mxCell id="Uel30QjwQRnJa0LbVriL-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="- Ticket Repository&lt;div&gt;- Agent Service&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ create Ticket&lt;/div&gt;&lt;div&gt;+ getTicket&lt;/div&gt;&lt;div&gt;+ update Ticket&lt;/div&gt;&lt;div&gt;+ resolveTicket&lt;/div&gt;&lt;div&gt;+ changeAgent&lt;/div&gt;" vertex="1">
+                <mxCell id="Uel30QjwQRnJa0LbVriL-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="- List&amp;lt;Tickets&amp;gt; tickets&lt;div&gt;- Agent Service&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ create Ticket&lt;/div&gt;&lt;div&gt;+ getTicket&lt;/div&gt;&lt;div&gt;+ update Ticket&lt;/div&gt;&lt;div&gt;+ resolveTicket&lt;/div&gt;&lt;div&gt;+ changeAgent&lt;/div&gt;" vertex="1">
                     <mxGeometry height="170" width="200" x="80" y="300" as="geometry"/>
                 </mxCell>
-                <mxCell id="Uel30QjwQRnJa0LbVriL-5" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Ticket Repository" vertex="1">
-                    <mxGeometry height="200" width="200" x="380" y="270" as="geometry"/>
-                </mxCell>
-                <mxCell id="Uel30QjwQRnJa0LbVriL-11" edge="1" parent="1" source="Uel30QjwQRnJa0LbVriL-6" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.987;exitY=0.476;exitDx=0;exitDy=0;exitPerimeter=0;" target="Uel30QjwQRnJa0LbVriL-10">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="Uel30QjwQRnJa0LbVriL-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="- HashMap&amp;lt;UUID,Ticket&amp;gt; tickets&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ save&lt;/div&gt;&lt;div&gt;+ update&lt;/div&gt;&lt;div&gt;+ findById&lt;/div&gt;" vertex="1">
-                    <mxGeometry height="180" width="200" x="380" y="290" as="geometry"/>
-                </mxCell>
-                <mxCell id="Uel30QjwQRnJa0LbVriL-7" edge="1" parent="1" source="Uel30QjwQRnJa0LbVriL-2" style="edgeStyle=none;html=1;entryX=-0.01;entryY=0.539;entryDx=0;entryDy=0;entryPerimeter=0;" target="Uel30QjwQRnJa0LbVriL-6">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="Uel30QjwQRnJa0LbVriL-15" edge="1" parent="1" source="Uel30QjwQRnJa0LbVriL-9" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="Uel30QjwQRnJa0LbVriL-16">
+                <mxCell id="Uel30QjwQRnJa0LbVriL-7" edge="1" parent="1" source="Uel30QjwQRnJa0LbVriL-2" style="edgeStyle=none;html=1;entryX=-0.002;entryY=0.372;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="hnZ7eQ314cuP4fQMPZ8K-4">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="870" y="380" as="sourcePoint"/>
-                        <mxPoint x="770" y="160" as="targetPoint"/>
+                        <mxPoint x="377.9999999999998" y="387.02" as="targetPoint"/>
                     </mxGeometry>
-                </mxCell>
-                <mxCell id="Uel30QjwQRnJa0LbVriL-9" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Ticket" vertex="1">
-                    <mxGeometry height="210" width="220" x="670" y="260" as="geometry"/>
-                </mxCell>
-                <mxCell id="Uel30QjwQRnJa0LbVriL-10" parent="Uel30QjwQRnJa0LbVriL-9" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="- id&lt;div&gt;- type&lt;/div&gt;&lt;div&gt;- title&lt;/div&gt;&lt;div&gt;- decription&lt;/div&gt;&lt;div&gt;- creationDate&lt;/div&gt;&lt;div&gt;- deadline&lt;/div&gt;&lt;div&gt;- assignedTo&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ startProgress&lt;/div&gt;&lt;div&gt;+ resolve&lt;/div&gt;&lt;div&gt;+ updateDeadline&lt;br&gt;&lt;/div&gt;" vertex="1">
-                    <mxGeometry height="190" width="220" y="20" as="geometry"/>
-                </mxCell>
-                <mxCell id="Uel30QjwQRnJa0LbVriL-14" edge="1" parent="1" source="Uel30QjwQRnJa0LbVriL-10" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Uel30QjwQRnJa0LbVriL-12">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="Uel30QjwQRnJa0LbVriL-12" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="TicketType" vertex="1">
-                    <mxGeometry height="200" width="200" x="680" y="550" as="geometry"/>
-                </mxCell>
-                <mxCell id="Uel30QjwQRnJa0LbVriL-13" parent="Uel30QjwQRnJa0LbVriL-12" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="+ Software&lt;div&gt;+QualityAnalysis&lt;/div&gt;&lt;div&gt;+ Product&lt;/div&gt;&lt;div&gt;+ HumanRelations&lt;/div&gt;" vertex="1">
-                    <mxGeometry height="180" width="200" y="20" as="geometry"/>
-                </mxCell>
-                <mxCell id="Uel30QjwQRnJa0LbVriL-16" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="TicketStatus" vertex="1">
-                    <mxGeometry height="200" width="200" x="980" y="265" as="geometry"/>
-                </mxCell>
-                <mxCell id="Uel30QjwQRnJa0LbVriL-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="+ Open&lt;div&gt;+ Resolved&lt;/div&gt;&lt;div&gt;+ InProgress&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-                    <mxGeometry height="180" width="200" x="970" y="290" as="geometry"/>
                 </mxCell>
                 <mxCell id="Uel30QjwQRnJa0LbVriL-18" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="AgentService" vertex="1">
                     <mxGeometry height="200" width="200" x="80" y="-30" as="geometry"/>
                 </mxCell>
-                <mxCell id="Uel30QjwQRnJa0LbVriL-20" edge="1" parent="1" style="edgeStyle=none;html=1;entryX=0.385;entryY=0.994;entryDx=0;entryDy=0;exitX=0.38;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;">
+                <mxCell id="Uel30QjwQRnJa0LbVriL-20" edge="1" parent="1" source="Uel30QjwQRnJa0LbVriL-1" style="edgeStyle=none;html=1;entryX=0.385;entryY=0.994;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryPerimeter=0;">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="178" y="270" as="sourcePoint"/>
                         <mxPoint x="179" y="168.92000000000007" as="targetPoint"/>
@@ -116,6 +82,84 @@
                 </mxCell>
                 <mxCell id="Uel30QjwQRnJa0LbVriL-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div&gt;+ getAgent&lt;/div&gt;" vertex="1">
                     <mxGeometry height="180" width="200" x="400" y="-325" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-10" edge="1" parent="1" source="hnZ7eQ314cuP4fQMPZ8K-3" style="edgeStyle=none;html=1;entryX=0.001;entryY=0.341;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=diamond;startFill=1;" target="hnZ7eQ314cuP4fQMPZ8K-12" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="820" y="382.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-18" edge="1" parent="1" source="hnZ7eQ314cuP4fQMPZ8K-3" style="edgeStyle=none;html=1;" target="hnZ7eQ314cuP4fQMPZ8K-16" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-21" edge="1" parent="1" source="hnZ7eQ314cuP4fQMPZ8K-3" style="edgeStyle=none;html=1;" target="hnZ7eQ314cuP4fQMPZ8K-19" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-29" edge="1" parent="1" source="hnZ7eQ314cuP4fQMPZ8K-3" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;" target="hnZ7eQ314cuP4fQMPZ8K-27" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-32" edge="1" parent="1" source="hnZ7eQ314cuP4fQMPZ8K-3" style="edgeStyle=none;html=1;entryX=0.293;entryY=0.008;entryDx=0;entryDy=0;entryPerimeter=0;" target="hnZ7eQ314cuP4fQMPZ8K-30" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="o-OyqhCL9gAWqaJvwuHQ-5" edge="1" parent="1" source="hnZ7eQ314cuP4fQMPZ8K-4" style="edgeStyle=none;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;exitX=1.001;exitY=0.08;exitDx=0;exitDy=0;exitPerimeter=0;" target="hnZ7eQ314cuP4fQMPZ8K-11">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="680" y="340" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-3" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="CompositeTicket&lt;div&gt;(Abstract Class)&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="225" width="280" x="400" y="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-4" parent="hnZ7eQ314cuP4fQMPZ8K-3" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- List&amp;lt;Task&amp;gt; tickets&lt;div&gt;- name&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getAllTasks() : List&amp;lt;Task&amp;gt;&lt;/div&gt;&lt;div&gt;+ getTasksCount() : int&lt;/div&gt;&lt;div&gt;+ getName() : String&lt;/div&gt;&lt;div&gt;+ getPendingWorkingHours() : int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="175" width="280" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-11" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Task&lt;br&gt;(Interface)" vertex="1">
+                    <mxGeometry height="130" width="190" x="830" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-12" parent="hnZ7eQ314cuP4fQMPZ8K-11" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+ getName() : String&lt;div&gt;+ getStatus() : TaskStatus&lt;/div&gt;&lt;div&gt;+ getPendingWorkingHours() : int&lt;/div&gt;&lt;div&gt;+ getCount() : int&lt;/div&gt;&lt;div&gt;+ resolve()&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="80" width="190" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-15" edge="1" parent="1" source="hnZ7eQ314cuP4fQMPZ8K-13" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="hnZ7eQ314cuP4fQMPZ8K-12">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1020" y="390" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="o-OyqhCL9gAWqaJvwuHQ-4" edge="1" parent="1" source="hnZ7eQ314cuP4fQMPZ8K-13" style="edgeStyle=none;html=1;" target="o-OyqhCL9gAWqaJvwuHQ-2" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-13" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Subtask" vertex="1">
+                    <mxGeometry height="180" width="240" x="1120" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-14" parent="hnZ7eQ314cuP4fQMPZ8K-13" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- name&lt;div&gt;- status&lt;/div&gt;&lt;div&gt;- pendingHours&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getName() : String&lt;/div&gt;&lt;div&gt;+ getStatus() : TaskStatus&lt;/div&gt;&lt;div&gt;+ getPendingWorkingHours : int&lt;/div&gt;&lt;div&gt;+ getCount() : 1&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="130" width="240" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-16" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Software Tickets" vertex="1">
+                    <mxGeometry height="225" width="280" x="-40" y="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-17" parent="hnZ7eQ314cuP4fQMPZ8K-16" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- List&amp;lt;Task&amp;gt; tickets&lt;div&gt;- name&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getAllTasks() : List&amp;lt;Task&amp;gt;&lt;/div&gt;&lt;div&gt;+ getTasksCount() : int&lt;/div&gt;&lt;div&gt;+ getName() : String&lt;/div&gt;&lt;div&gt;+ getPendingWorkingHours() : int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="175" width="280" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-19" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Quality Analysis Tickets" vertex="1">
+                    <mxGeometry height="235" width="300" x="380" y="585" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-20" parent="hnZ7eQ314cuP4fQMPZ8K-19" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- List&amp;lt;Task&amp;gt; tickets&lt;div&gt;- name&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getAllTasks() : List&amp;lt;Task&amp;gt;&lt;/div&gt;&lt;div&gt;+ getCount() : int&lt;/div&gt;&lt;div&gt;+ getName() : String&lt;/div&gt;&lt;div&gt;+ getPendingWorkingHours() : int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="185" width="300" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-27" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Product Tickets" vertex="1">
+                    <mxGeometry height="225" width="280" x="750" y="585" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-28" parent="hnZ7eQ314cuP4fQMPZ8K-27" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- List&amp;lt;Task&amp;gt; tickets&lt;div&gt;- name&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getAllTasks() : List&amp;lt;Task&amp;gt;&lt;/div&gt;&lt;div&gt;+ getTasksCount() : int&lt;/div&gt;&lt;div&gt;+ getName() : String&lt;/div&gt;&lt;div&gt;+ getPendingWorkingHours() : int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="175" width="280" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-30" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Human Resource Tickets" vertex="1">
+                    <mxGeometry height="225" width="280" x="1080" y="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="hnZ7eQ314cuP4fQMPZ8K-31" parent="hnZ7eQ314cuP4fQMPZ8K-30" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- List&amp;lt;Task&amp;gt; tickets&lt;div&gt;- name&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getAllTasks() : List&amp;lt;Task&amp;gt;&lt;/div&gt;&lt;div&gt;+ getTasksCount() : int&lt;/div&gt;&lt;div&gt;+ getName() : String&lt;/div&gt;&lt;div&gt;+ getPendingWorkingHours() : int&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="175" width="280" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="o-OyqhCL9gAWqaJvwuHQ-2" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Task Status" vertex="1">
+                    <mxGeometry height="180" width="240" x="1450" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="o-OyqhCL9gAWqaJvwuHQ-3" parent="o-OyqhCL9gAWqaJvwuHQ-2" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="OPEN&lt;br&gt;IN_PROGRESS&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;RESOLVED&lt;br&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="130" width="240" y="50" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

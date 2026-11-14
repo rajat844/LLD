@@ -1,11 +1,13 @@
-package Code.Repository;
+package code.repository;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.UUID;
 
-import Code.Model.Ticket;
+import code.model.Ticket;
 
 public class TicketRepository {
     private final Map<UUID, Ticket> tickets;
@@ -26,4 +28,7 @@ public class TicketRepository {
         tickets.put(ticket.getId(), ticket);
     }
 
+    public List<Ticket> getAllTickets() {
+        return new ArrayList<>(tickets.values());
+    }
 }

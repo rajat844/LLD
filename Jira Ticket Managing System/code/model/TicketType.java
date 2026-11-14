@@ -1,8 +1,9 @@
-package Code.Model;
+package code.model;
 
 public enum TicketType {
     SOFTWARE,
     QUALITY_ANALYSIS,
     PRODUCT,
-    HUMAN_RELATIONS    
+    HUMAN_RESOURCE,
+    HUMAN_RELATIONS
 }

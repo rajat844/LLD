@@ -1,9 +1,9 @@
-package Code.Model;
+package code.model;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 public class Agent {
@@ -28,7 +28,7 @@ public class Agent {
         return name;
     }
 
-    public HashSet<Expertise> getExpertises() {
+    public Set<Expertise> getExpertises() {
         return new HashSet<>(expertises);
     }
 
@@ -53,7 +53,7 @@ public class Agent {
     }
 
     public boolean assign(Ticket ticket) {
-        if (assignedTickets.contains(ticket)) {
+        if (ticket == null || assignedTickets.contains(ticket)) {
             return false;
         }
 
@@ -62,11 +62,10 @@ public class Agent {
         ticket.startProgress();
 
         return true;
-
     }
 
     public boolean remove(Ticket ticket) {
-        if (!assignedTickets.contains(ticket)) {
+        if (ticket == null || !assignedTickets.contains(ticket)) {
             return false;
         }
 
@@ -74,5 +73,4 @@ public class Agent {
         ticket.removeAgent();
         return true;
     }
-
 }

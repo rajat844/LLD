@@ -1,14 +1,11 @@
-package Code.Repository;
+package code.repository;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-import Code.AssignAgentStrategy.AssignAgentStartegy;
-import Code.AssignAgentStrategy.ExpertizeBasedAssignement;
-import Code.Model.Agent;
-import Code.Model.Ticket;
+import code.model.Agent;
 
 public class AgentRepository {
     private final List<Agent> agents;
@@ -22,7 +19,8 @@ public class AgentRepository {
     }
 
     public Optional<Agent> findById(UUID id) {
-        return agents.stream().filter(agent -> agent.getId().equals(id))
+        return agents.stream()
+                .filter(agent -> agent.getId().equals(id))
                 .findFirst();
     }
 
