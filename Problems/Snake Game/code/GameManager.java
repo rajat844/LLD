@@ -10,7 +10,6 @@ import java.util.PriorityQueue;
 
 public class GameManager {
     private static final int MAX_TOP_SCORES = 10;
-    // Min-heap to maintain top 10 high scores
     private final PriorityQueue<Integer> highscores;
     private Game currentGame;
 
@@ -19,7 +18,6 @@ public class GameManager {
     }
 
     public Game playGame() {
-        // Default 10x10 grid with no walls and RandomCandyGenerator
         Grid defaultGrid = new Grid(10, 10, new HashSet<>());
         Snake defaultSnake = new Snake(new Position(0, 0), Direction.RIGHT);
         CandyGenerationStrategy defaultStrategy = new RandomCandyGenerator();

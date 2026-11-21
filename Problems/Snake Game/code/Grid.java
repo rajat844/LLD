@@ -14,13 +14,7 @@ public class Grid {
         this.cols = cols;
         this.walls = (walls != null) ? new HashSet<>(walls) : new HashSet<>();
     }
-
-    /**
-     * Seamlessly wraps a position to the opposite side of the grid when crossing boundaries.
-     *
-     * @param position coordinate to wrap
-     * @return wrapped Position within [0, rows) and [0, cols)
-     */
+    
     public Position wrap(Position position) {
         if (position == null || rows == null || cols == null || rows <= 0 || cols <= 0) {
             return position;

@@ -16,8 +16,6 @@ public class Game {
         this.strategy = strategy;
         this.state = GameState.RUNNING;
         this.score = 0;
-
-        // Generate initial candy
         if (this.strategy != null && this.grid != null && this.snake != null) {
             this.candy = this.strategy.generateCandy(this.grid, this.snake);
             if (this.candy == null && this.snake.getSize() >= this.grid.getWalkAbleCellCount()) {
@@ -26,11 +24,6 @@ public class Game {
         }
     }
 
-    /**
-     * Executes one tick of the game (O(1) time complexity).
-     *
-     * @return current GameState after this tick
-     */
     public GameState step() {
         if (state != GameState.RUNNING) {
             return state;
@@ -49,18 +42,14 @@ public class Game {
         Position nextRaw = currentDir.nextFrom(currentHead);
         Position nextPos = grid.wrap(nextRaw);
 
-        // 1. Check wall collision
         if (grid.isWall(nextPos)) {
             this.state = GameState.GAME_OVER;
             return this.state;
         }
 
-        // 2. Check eating candy vs regular move
         boolean isEating = (candy != null && nextPos.equals(candy.getPosition()));
 
-        // 3. Check self collision
-        // If not eating candy, current tail moves forward and is vacated.
-        // If eating candy, tail stays, so moving onto any occupied cell is a self-collision.
+
         boolean selfCollision = isEating
                 ? snake.isOccupying(nextPos)
                 : (snake.isOccupying(nextPos) && !nextPos.equals(snake.getTail()));
@@ -70,19 +59,16 @@ public class Game {
             return this.state;
         }
 
-        // 4. Perform move or growth
         if (isEating) {
             snake.increaseLength(nextPos);
             score += (candy.getValue() != null ? candy.getValue() : 1);
 
-            // Check win condition
             if (snake.getSize() >= grid.getWalkAbleCellCount()) {
                 this.candy = null;
                 this.state = GameState.WON;
                 return this.state;
             }
 
-            // Generate next candy
             if (strategy != null) {
                 this.candy = strategy.generateCandy(grid, snake);
                 if (this.candy == null) {

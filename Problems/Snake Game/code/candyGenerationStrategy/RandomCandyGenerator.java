@@ -23,7 +23,6 @@ public class RandomCandyGenerator implements CandyGenerationStrategy {
             return null;
         }
 
-        // Try fast random placement first in O(1) expected time
         for (int i = 0; i < MAX_ATTEMPTS; i++) {
             int r = random.nextInt(grid.getRows());
             int c = random.nextInt(grid.getCols());
@@ -34,7 +33,6 @@ public class RandomCandyGenerator implements CandyGenerationStrategy {
             }
         }
 
-        // Fallback if random attempts collided on crowded board
         List<Position> available = new ArrayList<>();
         for (int r = 0; r < grid.getRows(); r++) {
             for (int c = 0; c < grid.getCols(); c++) {
