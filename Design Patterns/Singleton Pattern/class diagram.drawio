@@ -1,0 +1,26 @@
+<mxfile host="65bd71144e">
+    <diagram id="nailqvwD25MsYA-yJyly" name="Page-1">
+        <mxGraphModel dx="794" dy="774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="E9n6gX5C_brRCLqnC-cO-1" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Singleton" vertex="1">
+                    <mxGeometry height="160" width="210" x="360" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="E9n6gX5C_brRCLqnC-cO-2" parent="E9n6gX5C_brRCLqnC-cO-1" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="- INSTANCE : Singleton&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;- Singleton() : Constructor&lt;/div&gt;&lt;div&gt;+ getInstance() : Singleton&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="110" width="210" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="E9n6gX5C_brRCLqnC-cO-3" edge="1" parent="1" source="E9n6gX5C_brRCLqnC-cO-1" style="edgeStyle=none;html=1;endArrow=open;endFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="E9n6gX5C_brRCLqnC-cO-1">
+                    <mxGeometry relative="1" x="0.0078" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="465" y="560"/>
+                            <mxPoint x="700" y="560"/>
+                            <mxPoint x="700" y="380"/>
+                        </Array>
+                        <mxPoint x="580" y="380" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

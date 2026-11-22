@@ -1,0 +1,64 @@
+<mxfile host="65bd71144e">
+    <diagram id="977uA7zdr_4y3Hhtav-4" name="Page-1">
+        <mxGraphModel dx="751" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-1" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Notification&lt;br&gt;(Interface)" vertex="1">
+                    <mxGeometry height="110" width="130" x="300" y="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-2" parent="EAE6V8zD7y1qJUHGONRl-1" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+ send(): void" vertex="1">
+                    <mxGeometry height="60" width="130" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-5" edge="1" parent="1" source="EAE6V8zD7y1qJUHGONRl-3" style="edgeStyle=none;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endArrow=open;endFill=0;startArrow=none;startFill=0;dashed=1;" target="EAE6V8zD7y1qJUHGONRl-2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-14" edge="1" parent="1" source="EAE6V8zD7y1qJUHGONRl-3" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=oval;startFill=0;" target="EAE6V8zD7y1qJUHGONRl-11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-3" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Email Notification" vertex="1">
+                    <mxGeometry height="120" width="160" x="130" y="470" as="geometry"/>
+                </mxCell>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-4" parent="EAE6V8zD7y1qJUHGONRl-3" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+ send() : void" vertex="1">
+                    <mxGeometry height="70" width="160" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-8" edge="1" parent="1" source="EAE6V8zD7y1qJUHGONRl-6" style="edgeStyle=none;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;endArrow=open;endFill=0;dashed=1;" target="EAE6V8zD7y1qJUHGONRl-2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-6" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Sms Notification" vertex="1">
+                    <mxGeometry height="120" width="160" x="440" y="470" as="geometry"/>
+                </mxCell>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-7" parent="EAE6V8zD7y1qJUHGONRl-6" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+ send() : void" vertex="1">
+                    <mxGeometry height="70" width="160" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-13" edge="1" parent="1" source="EAE6V8zD7y1qJUHGONRl-9" style="edgeStyle=none;html=1;endArrow=block;endFill=0;" target="EAE6V8zD7y1qJUHGONRl-11" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-17" edge="1" parent="1" source="EAE6V8zD7y1qJUHGONRl-9" style="edgeStyle=none;html=1;endArrow=block;endFill=0;" target="EAE6V8zD7y1qJUHGONRl-15" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-9" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Creator&lt;div&gt;(Abstract Class)&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="120" width="160" x="310" y="860" as="geometry"/>
+                </mxCell>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-10" parent="EAE6V8zD7y1qJUHGONRl-9" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+ create() : Notification&lt;div&gt;+ notifyUser() : void&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="70" width="160" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-11" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Email Creator" vertex="1">
+                    <mxGeometry height="120" width="160" x="130" y="680" as="geometry"/>
+                </mxCell>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-12" parent="EAE6V8zD7y1qJUHGONRl-11" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+ create() : Notification" vertex="1">
+                    <mxGeometry height="70" width="160" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-18" edge="1" parent="1" source="EAE6V8zD7y1qJUHGONRl-15" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=oval;endFill=0;" target="EAE6V8zD7y1qJUHGONRl-7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-15" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Sms Creator" vertex="1">
+                    <mxGeometry height="120" width="160" x="440" y="680" as="geometry"/>
+                </mxCell>
+                <mxCell id="EAE6V8zD7y1qJUHGONRl-16" parent="EAE6V8zD7y1qJUHGONRl-15" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+ create() : Notification" vertex="1">
+                    <mxGeometry height="70" width="160" y="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
