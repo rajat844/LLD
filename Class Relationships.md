@@ -13,7 +13,7 @@
 * The Vibe: "I know you, and I keep your contact info."
 * Code Translation: The object is stored as a persistent class field. It can be 1-to-1, 1-to-many, unidirectional, or bidirectional.
 * Lifecycle: Completely independent.
-* UML: Solid line (_____>).
+* UML: Solid line (—————>).
 * Example: A Driver has a Vehicle.
 
 ## Aggregation (The Loose Whole-Part)
@@ -43,5 +43,5 @@
 
 * The Vibe: "We belong to the same family. I’ve built half the house for you, but you need to finish the rest."
 * Code Translation: A partially built class. It can hold state (instance variables, locks, constructors) and shared concrete logic, alongside empty abstract methods. A class can only extend one abstract class (strict IS-A relationship).
-* UML: Class name written in Italics (or labeled {abstract}). Connected via a solid line with a hollow triangle (____|>).
+* UML: Class name written in Italics (or labeled {abstract}). Connected via a solid line with a hollow triangle (—————|>).
 * Example: Account. It provides the balance field, the lock, and the exact code for debit(). UpiAccount and CardAccount inherit all of that for free, but must write their own specific validate() logic.
